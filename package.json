@@ -7,6 +7,7 @@
         "start": "tsc && node index.js"
     },
     "dependencies": {
+        "moment": "^2.29.4",
         "randomstring": "^1.2.3"
     },
     "devDependencies": {
