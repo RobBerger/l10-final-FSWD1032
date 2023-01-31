@@ -1,3 +1,8 @@
 import moment from 'moment'
 
-console.log(moment().format('LLLL'));
+function generateDate() {
+    let newDate = moment().format('LLLL');
+    return newDate;
+}
+
+console.log(generateDate());
