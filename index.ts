@@ -1,8 +1,5 @@
-import moment from 'moment'
-
-function generateDate() {
-    let newDate = moment().format('LLLL');
-    return newDate;
-}
+import generatePassword from './passwordGenerator'
+import generateDate from './dateMaker'
 
 console.log(generateDate());
+console.log(generatePassword());
