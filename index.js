@@ -4,4 +4,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const randomstring_1 = __importDefault(require("randomstring"));
-console.log(randomstring_1.default.generate());
+function generatePassword() {
+    let newPass = randomstring_1.default.generate(15);
+    return newPass;
+}
+;
+exports.default = generatePassword;
+console.log(generatePassword());
