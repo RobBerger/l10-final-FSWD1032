@@ -19,7 +19,7 @@ class User {
         this.username = objUsername;
     }
     prettyPrint() {
-        return `---\n\nID: ${this.userId}\nUsername: ${this.username}\nPassword: ${this.password}\nCreated On: ${this.createdDate}`;
+        return `---\nID: ${this.userId}\nUsername: ${this.username}\nPassword: ${this.password}\nCreated On: ${this.createdDate}\n`;
     }
 }
 exports.default = User;
