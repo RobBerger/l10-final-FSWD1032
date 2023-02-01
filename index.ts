@@ -1,16 +1,22 @@
 import generatePassword from './passwordGenerator'
 import generateDate from './dateMaker'
 
+function randomNumberLimiter(min: number, max: number): number {
+    return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+function generateUserId(): number {
+    return randomNumberLimiter(1000, 9999)
+}
+
 class User {
-    userId: number;
+    userId: number = generateUserId();
     username: string;
     password: string = generatePassword();
-    createdDate: string;
+    createdDate: string = generateDate();
 
-    constructor(objUserId: number, objUsername: string, objCreatedDate: string) {
+    constructor(objUsername: string) {
         this.username = objUsername;
-        this.userId = objUserId;
-        this.createdDate = objCreatedDate;
     }
 
     prettyPrint(): string {
@@ -18,6 +24,6 @@ class User {
     }
 }
 
-let mw: User = new User(1111, "Michael Weston", "today");
+let mw: User = new User("Michael Weston");
 
 console.log(mw.prettyPrint());
