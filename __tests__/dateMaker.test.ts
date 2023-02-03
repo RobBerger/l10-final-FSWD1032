@@ -1,4 +1,4 @@
-import generateDate from "./dateMaker";
+import generateDate from "../dateMaker";
 import moment from 'moment';
 
 describe('dateMaker', () => {
