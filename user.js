@@ -3,6 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.generateUserId = void 0;
 const passwordGenerator_1 = __importDefault(require("./passwordGenerator"));
 const dateMaker_1 = __importDefault(require("./dateMaker"));
 function randomNumberLimiter(min, max) {
@@ -11,6 +12,7 @@ function randomNumberLimiter(min, max) {
 function generateUserId() {
     return randomNumberLimiter(1000, 9999);
 }
+exports.generateUserId = generateUserId;
 class User {
     constructor(objUsername) {
         this.userId = generateUserId();

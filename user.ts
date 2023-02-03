@@ -5,7 +5,7 @@ function randomNumberLimiter(min: number, max: number): number {
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
-function generateUserId(): number {
+export function generateUserId(): number {
     return randomNumberLimiter(1000, 9999)
 }
 
