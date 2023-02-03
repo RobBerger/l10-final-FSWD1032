@@ -4,7 +4,8 @@
     "description": "Testing TypeScript code",
     "main": "index.js",
     "scripts": {
-        "start": "tsc && node index.js"
+        "start": "tsc && node index.js",
+        "test": "jest"
     },
     "dependencies": {
         "moment": "^2.29.4",
